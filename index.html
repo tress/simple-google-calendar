@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Nathan Simple Google Calendar</title>
+    <title>Simple Google Calendar</title>
     <meta charset="utf-8">
     
-    <!-- To keep things simple, I'm loading outside libraries via cdnjs, rather than downloading and making them as part of the local
-         project. -->
-    
-    <!-- I weighed whether or not I should use bootstrap CSS to get some out-of-the-box responsiveness and styling, since maybe
-         you wanted to see me define some responsive CSS manually myself. In the end I opted for using bootstrap, because for real
-         projects, unless there is a requirement not to use pre-existing libraries, I think you should not reinvent the wheel, and 
-         bootstrap is going to do a better job than I could do manually in a short time frame. -->
+  
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/app.css">
@@ -32,7 +26,7 @@
         <div class="col-sm-12">
           <h2><small>Simple</small> Google <small>Calendar</small></h2>
           <hr/>
-          <p>Select a date to show events for that date from all your Google Calendars:</p>
+          <p>Select a date to show events for that date from  your Google Calendars:</p>
         </div>
       </div>
       <div class="row">
@@ -82,8 +76,6 @@
     
     <!-- Google JS Client Library and helper function for api loaded -->
     <script type="text/javascript">
-      // if jQueryis ready, set a listener on the document (within a document ready call) for the google API being loaded;
-      // either way set global flag in addition 
       var gapiIsLoaded = false;
       var GAPI_LOADED_EV = 'app:gapi-loaded'
       function gapiLoaded(){
