@@ -65,9 +65,7 @@ $(function(){
       // simple array of calevents that will then be assigned in batch to CalEvents via CalEvents.reset()
       this.calevents = [];
       
-      // Users may add/remove calendars from their Google calendar list while interacting with this app, but to keep things
-      // simpler and  faster, we'll cache the calendarlist the first time, and just use that; otherwise I think we'd have to 
-      // get the calendar list every time we want to get a set of events for a date.
+    
       this.calendarlist = null;
       
       // listen for reset event on our CalEventList instance
@@ -100,7 +98,7 @@ $(function(){
     
     // @NOTE I defined the project on the Google Developers Console to expect to be running from http://localhost (Javascript Origins setting)
     authInfo: {
-      clientID: '205919807575-2p3tlh5i5pi93lm8r96ufq6jup14179v.apps.googleusercontent.com',
+      clientID: your client id
       scopeReadOnly: 'https://www.googleapis.com/auth/calendar.readonly',
       scopeReadWrite: 'https://www.googleapis.com/auth/calendar'
     },
